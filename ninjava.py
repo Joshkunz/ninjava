@@ -567,7 +567,7 @@ def obj_hasattr(*attrs):
 
     return obj_hasattr_decorator
 
-class Ninjava(ninja_syntax.Writer):
+class Ninjava(Writer):
     "A ninja file writer"
 
     def __init__(self, buildfile_name):

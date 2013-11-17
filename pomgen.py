@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from pypom import Mvn, Resolver, resolve
+from pypom import Mvn, Resolver
 
 R = Resolver("http://repo2.maven.org/maven2",
              "http://repository.jboss.org",
@@ -39,4 +39,4 @@ DEPS = [
 ]
 
 from pprint import pprint
-pprint(resolve(R, *DEPS))
+pprint(R.resolve(*DEPS))
